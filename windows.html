@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -45,14 +45,16 @@
   <a href="index.html" class="nav-logo" aria-label="SF Window Station home">
     <img src="images/logo.png" alt="San Francisco Window Station logo" width="258" height="64">
   </a>
-  <ul class="nav-links" role="list">
-    <li><a href="windows.html" class="active">Windows</a></li>
-    <li><a href="doors.html">Doors</a></li>
+  <ul class="nav-links" id="nav-links" role="list">
+    <li><a href="window-replacement.html" class="active">Window Replacement</a></li>
+    <li><a href="doors.html">Door Installation</a></li>
     <li><a href="gallery.html">Gallery</a></li>
     <li><a href="service-areas.html">Service Areas</a></li>
+    <li><a href="faq.html">FAQ</a></li>
     <li><a href="about.html">About</a></li>
   </ul>
   <a href="contact.html" class="btn-nav"><span>Free Estimate</span></a>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
 
 <header class="page-hero">
@@ -344,6 +346,15 @@
     btn.querySelector('span').textContent = 'Sending...';
     setTimeout(() => { btn.querySelector('span').textContent = 'Request Sent!'; }, 1200);
   });
+  const hamburger = document.getElementById('nav-hamburger');
+  const navLinks = document.getElementById('nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+    });
+  }
 }());
 </script>
 </body>
