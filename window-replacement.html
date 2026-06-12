@@ -24,11 +24,14 @@
   <link rel="stylesheet" href="style.css">
   <style>
     /* Window type icon strip */
-    .wt-strip { display:grid; grid-template-columns:repeat(6,1fr); gap:1px; background:oklch(86% .014 220); }
-    .wt-card { background:#fff; padding:36px 16px 32px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px; border-top:3px solid transparent; transition:border-color .2s, background .2s; }
-    .wt-card:hover { border-top-color:var(--green-500); background:oklch(98.5% .006 200); }
-    .wt-card-title { font-family:var(--display); font-size:17px; font-weight:500; color:var(--text-light); }
-    .wt-card-desc { font-size:12px; color:var(--text-muted-light); line-height:1.58; }
+    .wt-strip { display:grid; grid-template-columns:repeat(6,1fr); gap:0; }
+    .wt-card { background:transparent; padding:44px 18px 40px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px; border-right:1px solid oklch(28% .022 240); border-top:2px solid transparent; transition:border-top-color .25s, background .25s; cursor:default; }
+    .wt-card:last-child { border-right:none; }
+    .wt-card:hover { border-top-color:var(--green-500); background:oklch(22% .024 240); }
+    .wt-card-icon { color:oklch(62% .16 155); transition:color .25s; }
+    .wt-card:hover .wt-card-icon { color:var(--green-500); }
+    .wt-card-title { font-family:var(--display); font-size:18px; font-weight:500; color:oklch(94% .007 230); letter-spacing:.01em; }
+    .wt-card-desc { font-size:11px; color:oklch(50% .016 230); line-height:1.55; letter-spacing:.01em; }
 
     /* Window styles showcase grid */
     .wr-showcase { display:grid; grid-template-columns:repeat(2,1fr); gap:32px; margin-top:52px; }
@@ -126,13 +129,13 @@
 </header>
 
 <!-- WINDOW TYPE STRIP -->
-<div style="background:#fff; border-top:1px solid oklch(90% .012 220); border-bottom:1px solid oklch(90% .012 220);">
+<div style="background:var(--navy-950);">
   <div style="max-width:1200px; margin:0 auto; padding:0 60px;">
     <div class="wt-strip reveal">
 
       <div class="wt-card">
-        <div style="color:var(--green-600);">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <div class="wt-card-icon">
+          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="3" width="42" height="42" rx="1.5"/>
             <line x1="30" y1="4" x2="30" y2="44"/>
             <circle cx="30" cy="13" r="1.5" fill="currentColor" stroke="none"/>
@@ -141,12 +144,12 @@
           </svg>
         </div>
         <div class="wt-card-title">Casement</div>
-        <div class="wt-card-desc">Side-hinged, swings fully open — maximum airflow and unobstructed views</div>
+        <div class="wt-card-desc">Full opening, maximum airflow</div>
       </div>
 
       <div class="wt-card">
-        <div style="color:var(--green-600);">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <div class="wt-card-icon">
+          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="3" width="42" height="42" rx="1.5"/>
             <line x1="4" y1="24" x2="44" y2="24"/>
             <polyline points="18,14 24,8 30,14"/>
@@ -154,12 +157,12 @@
           </svg>
         </div>
         <div class="wt-card-title">Double-Hung</div>
-        <div class="wt-card-desc">Both sashes slide — the classic choice for Victorian and Edwardian homes</div>
+        <div class="wt-card-desc">Both sashes slide — classic for Victorian homes</div>
       </div>
 
       <div class="wt-card">
-        <div style="color:var(--green-600);">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <div class="wt-card-icon">
+          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <line x1="4" y1="44" x2="14" y2="8"/>
             <line x1="14" y1="8" x2="24" y2="4"/>
             <line x1="24" y1="4" x2="34" y2="8"/>
@@ -170,23 +173,23 @@
           </svg>
         </div>
         <div class="wt-card-title">Bay &amp; Bow</div>
-        <div class="wt-card-desc">Projects outward — adds interior space and a dramatic architectural focal point</div>
+        <div class="wt-card-desc">Projects outward, light from three angles</div>
       </div>
 
       <div class="wt-card">
-        <div style="color:var(--green-600);">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <div class="wt-card-icon">
+          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="3" width="42" height="42" rx="1.5"/>
             <rect x="9" y="9" width="30" height="30" rx="1"/>
           </svg>
         </div>
         <div class="wt-card-title">Picture</div>
-        <div class="wt-card-desc">Fixed glass — maximum light, best energy performance, frames any view</div>
+        <div class="wt-card-desc">Fixed glass, best energy performance</div>
       </div>
 
       <div class="wt-card">
-        <div style="color:var(--green-600);">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <div class="wt-card-icon">
+          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="3" width="42" height="42" rx="1.5"/>
             <line x1="24" y1="4" x2="24" y2="44"/>
             <polyline points="14,20 8,24 14,28"/>
@@ -194,12 +197,12 @@
           </svg>
         </div>
         <div class="wt-card-title">Slider</div>
-        <div class="wt-card-desc">Panels glide horizontally — ideal for wide openings with no swing space</div>
+        <div class="wt-card-desc">Glides horizontally, no swing space needed</div>
       </div>
 
       <div class="wt-card">
-        <div style="color:var(--green-600);">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <div class="wt-card-icon">
+          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="3" width="42" height="42" rx="1.5"/>
             <line x1="4" y1="16" x2="44" y2="16"/>
             <circle cx="12" cy="16" r="1.5" fill="currentColor" stroke="none"/>
@@ -208,7 +211,7 @@
           </svg>
         </div>
         <div class="wt-card-title">Awning</div>
-        <div class="wt-card-desc">Hinged at top — ventilates even in San Francisco's fog and drizzle</div>
+        <div class="wt-card-desc">Ventilates even in SF fog and drizzle</div>
       </div>
 
     </div>
