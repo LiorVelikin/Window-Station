@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core pages -->
+  <url><loc>https://liorvelikin.github.io/Window-Station/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/windows.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/doors.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Window material pages -->
+  <url><loc>https://liorvelikin.github.io/Window-Station/vinyl-windows.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/fiberglass-windows.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/wood-windows.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/aluminum-windows.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Company pages -->
+  <url><loc>https://liorvelikin.github.io/Window-Station/service-areas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/gallery.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/faq.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Blog -->
+  <url><loc>https://liorvelikin.github.io/Window-Station/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/blog-window-replacement-cost-sf.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/blog-vinyl-vs-fiberglass-windows.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/blog-best-windows-victorian-homes.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/blog-repair-vs-replace-windows.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://liorvelikin.github.io/Window-Station/blog-energy-star-california.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>
