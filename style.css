@@ -66,7 +66,7 @@ body { font-family: var(--body); background: var(--cream-50); color: var(--text-
 .btn-nav:active { transform: scale(0.97); }
 .btn-nav span { position: relative; z-index: 1; }
 .nav-right { display: flex; align-items: center; gap: 20px; justify-self: end; }
-.nav-phone-link { font-family: var(--display); font-size: 16px; font-weight: 600; color: oklch(94% 0.006 240); text-decoration: none; transition: color .18s var(--ease-out); white-space: nowrap; }
+.nav-phone-link { font-family: var(--body); font-size: 15px; font-weight: 500; color: oklch(94% 0.006 240); text-decoration: none; transition: color .18s var(--ease-out); white-space: nowrap; letter-spacing: .02em; }
 .nav-phone-link:hover { color: var(--green-300); }
 .nav-hamburger {
   display: none; flex-direction: column; justify-content: center; gap: 5px;
@@ -139,7 +139,7 @@ body { font-family: var(--body); background: var(--cream-50); color: var(--text-
 .btn-outline:active { transform: scale(0.97); }
 .hero-phone { display: flex; flex-direction: column; gap: 4px; }
 .hero-phone-label { font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--text-dim-dark); }
-.hero-phone-num { font-family: var(--display); font-size: 24px; font-weight: 600; color: var(--text-dark); text-decoration: none; transition: color .18s var(--ease-out); }
+.hero-phone-num { font-family: var(--body); font-size: 22px; font-weight: 500; color: var(--text-dark); text-decoration: none; transition: color .18s var(--ease-out); letter-spacing: .02em; }
 .hero-phone-num:hover { color: var(--green-300); }
 .hero-scroll { position: absolute; bottom: 36px; right: 60px; display: flex; align-items: center; gap: 10px; color: var(--green-400); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; opacity:0; animation: fadeIn .7s var(--ease-out) 1.1s forwards; }
 .scroll-tick { width: 44px; height: 1px; background: oklch(38% 0.12 140); position: relative; overflow: hidden; }
@@ -179,7 +179,7 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
 .about-link { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--green-600); text-decoration: none; transition: gap .2s var(--ease-out), color .18s; }
 .about-link:hover { gap: 14px; color: var(--green-500); }
 .about-link:active { transform: scale(0.98); }
-.about-phone-link { font-family: var(--display); font-size: 20px; font-weight: 600; color: var(--text-light); text-decoration: none; transition: color .18s; }
+.about-phone-link { font-family: var(--body); font-size: 18px; font-weight: 500; color: var(--text-light); text-decoration: none; transition: color .18s; letter-spacing: .02em; }
 .about-phone-link:hover { color: var(--green-600); }
 .about-img-wrap { position: relative; }
 .about-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
@@ -242,7 +242,7 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
 .btn-cta-light > * { position: relative; z-index: 1; }
 .mid-cta-phone-wrap { text-align: right; }
 .mid-cta-phone-label { font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: oklch(76% 0.1 138); }
-.mid-cta-phone { font-family: var(--display); font-size: 22px; font-weight: 600; color: oklch(97% 0.003 140); text-decoration: none; display: block; margin-top: 4px; transition: opacity .18s; }
+.mid-cta-phone { font-family: var(--body); font-size: 20px; font-weight: 500; color: oklch(97% 0.003 140); text-decoration: none; display: block; margin-top: 4px; transition: opacity .18s; letter-spacing: .02em; }
 .mid-cta-phone:hover { opacity: .8; }
 
 /* ─── PROJECTS ───────────────────────────────────────────── */
@@ -698,7 +698,7 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
 .sidebar-cta .btn-primary { width: 100%; justify-content: center; }
 .sidebar-phone { padding: 24px; border: 1px solid oklch(88% 0.012 220); background: #fff; }
 .sidebar-phone-label { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--text-muted-light); margin-bottom: 8px; }
-.sidebar-phone a { font-family: var(--display); font-size: 22px; font-weight: 600; color: var(--text-light); text-decoration: none; display: block; }
+.sidebar-phone a { font-family: var(--body); font-size: 20px; font-weight: 500; color: var(--text-light); text-decoration: none; display: block; letter-spacing: .02em; }
 .sidebar-phone a:hover { color: var(--green-600); }
 .sidebar-related { background: #fff; border: 1px solid oklch(88% 0.012 220); padding: 24px; }
 .sidebar-related-head { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--text-muted-light); margin-bottom: 16px; }
