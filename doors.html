@@ -36,6 +36,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="preload" href="images/door-fiberglass.webp" as="image" fetchpriority="high">
   <link rel="stylesheet" href="style.css">
+  <style>
+    @media (max-width: 900px) {
+      .door-split { grid-template-columns: 1fr !important; min-height: unset !important; }
+      .door-split-img { height: 300px; }
+      .door-split-body { padding: 40px 28px !important; }
+      [style*="grid-template-columns:55%"] { grid-template-columns: 1fr !important; min-height: unset !important; }
+      [style*="grid-template-columns:55%"] > div:first-child { height: 300px; }
+    }
+  </style>
   <!-- Google Analytics 4: paste your measurement ID below to activate
   <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script>
@@ -83,61 +92,63 @@
 </header>
 
 <!-- DOOR TYPES -->
-<section style="border-top: 1px solid oklch(88% 0.012 220);">
+<section style="border-top:1px solid oklch(88% .012 220);">
 
-  <!-- SLIDING PATIO DOORS — PRIMARY -->
-  <div class="door-feature reveal">
-    <div class="door-feature-img">
-      <img src="images/door-patio.webp" alt="Sliding patio door opening to deck in San Francisco home" width="800" height="600" loading="lazy">
-      <div class="door-feature-badge">Most Popular</div>
+  <!-- SLIDING PATIO DOORS — PRIMARY FOCUS -->
+  <div class="reveal" style="display:grid; grid-template-columns:55% 45%; min-height:520px;">
+    <div style="position:relative; overflow:hidden;">
+      <img src="images/door-patio.webp" alt="Sliding patio door opening to deck in San Francisco home" loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
+      <span style="position:absolute; top:24px; left:24px; background:var(--green-600); color:#fff; font-size:11px; font-weight:500; letter-spacing:.1em; text-transform:uppercase; padding:6px 14px;">Most Popular</span>
     </div>
-    <div class="door-feature-body">
-      <div class="door-feature-label">Indoor-Outdoor Living</div>
-      <h3>Sliding Patio Doors</h3>
-      <p>Wide-format sliding glass doors that seamlessly connect your interior to your deck, backyard, or garden. The most-requested door upgrade for Bay Area homes — and the one our customers talk about most after installation.</p>
-      <ul>
-        <li>Aluminum, vinyl, and fiberglass frame options</li>
-        <li>Double or triple-pane energy-efficient glazing</li>
-        <li>Smooth-glide hardware rated for decades of use</li>
-        <li>Integrated screen door options available</li>
-        <li>Custom sizing for non-standard openings</li>
-        <li>Multi-point locking systems for security</li>
+    <div style="padding:64px 56px; background:var(--navy-950); display:flex; flex-direction:column; justify-content:center; gap:0;">
+      <div style="font-size:11px; letter-spacing:.15em; text-transform:uppercase; color:var(--green-400); margin-bottom:14px;">Indoor-Outdoor Living</div>
+      <h2 style="font-family:var(--display); font-size:clamp(28px,3vw,44px); font-weight:400; color:var(--text-dark); line-height:1.15; margin-bottom:20px;">Sliding Patio Doors</h2>
+      <p style="font-size:15px; color:oklch(74% .007 250); line-height:1.75; margin-bottom:28px;">Wide-format sliding glass doors that seamlessly connect your interior to your deck, backyard, or garden. The most-requested door upgrade for Bay Area homes — and the one our customers talk about most after installation.</p>
+      <ul style="list-style:none; padding:0; margin:0 0 40px; display:flex; flex-direction:column; gap:10px;">
+        <li style="font-size:14px; color:oklch(70% .007 250); padding-left:22px; position:relative; line-height:1.5;"><span style="position:absolute; left:0; color:var(--green-400);">—</span>Aluminum, vinyl, and fiberglass frame options</li>
+        <li style="font-size:14px; color:oklch(70% .007 250); padding-left:22px; position:relative; line-height:1.5;"><span style="position:absolute; left:0; color:var(--green-400);">—</span>Double or triple-pane energy-efficient glazing</li>
+        <li style="font-size:14px; color:oklch(70% .007 250); padding-left:22px; position:relative; line-height:1.5;"><span style="position:absolute; left:0; color:var(--green-400);">—</span>Smooth-glide hardware rated for decades of use</li>
+        <li style="font-size:14px; color:oklch(70% .007 250); padding-left:22px; position:relative; line-height:1.5;"><span style="position:absolute; left:0; color:var(--green-400);">—</span>Integrated screen door options available</li>
+        <li style="font-size:14px; color:oklch(70% .007 250); padding-left:22px; position:relative; line-height:1.5;"><span style="position:absolute; left:0; color:var(--green-400);">—</span>Multi-point locking systems for security</li>
       </ul>
-      <a href="contact.html" class="btn-primary" style="display:inline-flex; align-self:flex-start;">
-        <span>Get Free Estimate</span>
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+      <div><a href="contact.html" class="btn-primary" style="display:inline-flex;"><span>Get Free Estimate</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
     </div>
   </div>
 
   <!-- ENTRY DOORS — SECONDARY -->
-  <div class="door-entry-section" style="background:var(--cream-50);">
+  <div style="padding:72px 60px 80px; background:var(--cream-50);">
     <div class="eyebrow-row reveal"><span class="eyebrow-rule"></span><span class="eyebrow-label">Entry Doors</span></div>
-    <h2 class="display reveal">Your front door,<br><em>done right</em></h2>
-    <div class="door-entry-grid reveal">
+    <h2 class="display reveal" style="margin-bottom:40px;">Your front door,<br><em>done right</em></h2>
+    <div class="product-cards reveal">
 
-      <article class="door-entry-card">
-        <div class="door-entry-card-img"><img src="images/door-fiberglass.webp" alt="Fiberglass entry door on San Francisco Victorian home" width="400" height="300" loading="lazy"></div>
-        <div class="door-entry-card-label">Most Durable</div>
-        <h3>Fiberglass Entry Doors</h3>
-        <p>Engineered to mimic the warmth of wood while resisting denting, cracking, and rot. Ideal for Bay Area homes exposed to salt air, fog, and temperature swings.</p>
-        <a href="contact.html" class="door-entry-card-link">Get Estimate <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+      <article class="product-card">
+        <div class="product-card-img"><img src="images/door-fiberglass.webp" alt="Fiberglass entry door on San Francisco Victorian home" width="400" height="300" loading="lazy"></div>
+        <div class="product-card-body">
+          <div class="product-card-label">Most Durable</div>
+          <h3 class="product-card-title">Fiberglass Entry Doors</h3>
+          <p class="product-card-desc">Engineered to mimic the warmth of wood while resisting denting, cracking, and rot. Ideal for Bay Area homes exposed to salt air, fog, and temperature swings.</p>
+          <a href="contact.html" class="product-card-link">Get Estimate <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+        </div>
       </article>
 
-      <article class="door-entry-card">
-        <div class="door-entry-card-img"><img src="images/door-wood.webp" alt="Solid mahogany wood entry door on San Francisco Victorian flat" width="400" height="300" loading="lazy"></div>
-        <div class="door-entry-card-label">Classic Warmth</div>
-        <h3>Wood Entry Doors</h3>
-        <p>Nothing matches the character of a solid wood front door. We work with mahogany, alder, and fir — stained or painted to complement your home's original trim and architecture.</p>
-        <a href="contact.html" class="door-entry-card-link">Get Estimate <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+      <article class="product-card">
+        <div class="product-card-img"><img src="images/door-wood.webp" alt="Solid mahogany wood entry door on San Francisco Victorian home" width="400" height="300" loading="lazy"></div>
+        <div class="product-card-body">
+          <div class="product-card-label">Classic Warmth</div>
+          <h3 class="product-card-title">Wood Entry Doors</h3>
+          <p class="product-card-desc">Nothing matches the character of a solid wood front door. Mahogany, alder, and fir — stained or painted to complement your home's original trim and architecture.</p>
+          <a href="contact.html" class="product-card-link">Get Estimate <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+        </div>
       </article>
 
-      <article class="door-entry-card">
-        <div class="door-entry-card-img"><img src="images/door-french.webp" alt="White French double doors opening to garden in San Francisco home" width="400" height="300" loading="lazy"></div>
-        <div class="door-entry-card-label">Elegant &amp; Light-Filled</div>
-        <h3>French Doors</h3>
-        <p>Double swing doors with glass lites that flood interior spaces with natural light. Perfect for connecting living rooms to gardens, decks, or dining areas in classic SF homes.</p>
-        <a href="contact.html" class="door-entry-card-link">Get Estimate <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+      <article class="product-card">
+        <div class="product-card-img"><img src="images/door-french.webp" alt="French double doors opening to garden in San Francisco home" width="400" height="300" loading="lazy"></div>
+        <div class="product-card-body">
+          <div class="product-card-label">Elegant &amp; Light-Filled</div>
+          <h3 class="product-card-title">French Doors</h3>
+          <p class="product-card-desc">Double swing doors with glass lites that flood interior spaces with natural light. Perfect for connecting living rooms to gardens, decks, or dining areas in classic SF homes.</p>
+          <a href="contact.html" class="product-card-link">Get Estimate <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+        </div>
       </article>
 
     </div>
