@@ -637,6 +637,39 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
   .reviews-rating-row { flex-wrap: wrap; }
 }
 
+/* ─── DOOR TYPES ────────────────────────────────────────── */
+.door-feature { display: grid; grid-template-columns: 55% 45%; min-height: 520px; }
+.door-feature-img { position: relative; overflow: hidden; }
+.door-feature-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.door-feature-badge { position: absolute; top: 24px; left: 24px; background: var(--green-600); color: #fff; font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; padding: 6px 14px; }
+.door-feature-body { padding: 64px; display: flex; flex-direction: column; justify-content: center; background: var(--navy-950); }
+.door-feature-label { font-size: 11px; letter-spacing: .15em; text-transform: uppercase; color: var(--green-400); margin-bottom: 14px; }
+.door-feature-body h3 { font-family: var(--display); font-size: clamp(28px, 3vw, 44px); font-weight: 400; color: var(--text-dark); line-height: 1.15; margin-bottom: 20px; }
+.door-feature-body > p { font-size: 15px; color: oklch(74% 0.007 250); line-height: 1.75; margin-bottom: 28px; }
+.door-feature-body ul { list-style: none; padding: 0; margin: 0 0 40px; display: flex; flex-direction: column; gap: 11px; }
+.door-feature-body ul li { font-size: 14px; color: oklch(70% 0.007 250); padding-left: 22px; position: relative; line-height: 1.5; }
+.door-feature-body ul li::before { content: '—'; position: absolute; left: 0; color: var(--green-400); }
+.door-entry-section { padding: 72px 60px 80px; }
+.door-entry-section .eyebrow-row { margin-bottom: 16px; }
+.door-entry-section .display { margin-bottom: 44px; }
+.door-entry-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: oklch(88% 0.012 220); }
+.door-entry-card { background: var(--cream-50); padding: 40px 36px; }
+.door-entry-card-img { aspect-ratio: 4/3; overflow: hidden; margin-bottom: 28px; }
+.door-entry-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s var(--ease-out); display: block; }
+.door-entry-card:hover .door-entry-card-img img { transform: scale(1.04); }
+.door-entry-card-label { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--green-600); margin-bottom: 10px; }
+.door-entry-card h3 { font-family: var(--display); font-size: 26px; font-weight: 500; color: var(--text-light); margin-bottom: 14px; line-height: 1.2; }
+.door-entry-card p { font-size: 14px; color: var(--text-muted-light); line-height: 1.65; margin-bottom: 20px; }
+.door-entry-card-link { font-size: 13px; font-weight: 500; color: var(--green-600); text-decoration: none; letter-spacing: .04em; display: inline-flex; align-items: center; gap: 6px; transition: color .18s var(--ease-out); }
+.door-entry-card-link:hover { color: var(--green-700); }
+@media (max-width: 960px) {
+  .door-feature { grid-template-columns: 1fr; min-height: unset; }
+  .door-feature-img { height: 320px; }
+  .door-feature-body { padding: 44px 36px; }
+  .door-entry-section { padding: 56px 32px 64px; }
+  .door-entry-grid { grid-template-columns: 1fr; }
+}
+
 /* ─── BLOG ──────────────────────────────────────────────── */
 .blog-hero { background: var(--navy-950); padding: 120px 60px 80px; text-align: center; }
 .blog-hero .eyebrow-row { justify-content: center; margin-bottom: 20px; }
