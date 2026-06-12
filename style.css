@@ -601,7 +601,8 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
 .reviews { background: var(--cream-50); padding: 100px 60px; }
 .reviews-inner { max-width: 1200px; margin: 0 auto; }
 .reviews-hdr { text-align: center; margin-bottom: 64px; }
-.reviews-hdr .eyebrow-row { justify-content: center; margin-bottom: 20px; }
+.reviews-yelp-logo-link { display: inline-block; margin-bottom: 20px; }
+.reviews-yelp-logo { display: block; height: 40px; width: auto; object-fit: contain; }
 .reviews-rating-row { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 20px; }
 .reviews-rating-stars { font-size: 20px; color: oklch(62% 0.18 55); letter-spacing: 3px; }
 .reviews-rating-num { font-family: var(--display); font-size: 28px; font-weight: 600; color: var(--text-light); }
