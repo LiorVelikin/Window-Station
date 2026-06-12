@@ -22,6 +22,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="preload" href="images/service-windows.webp" as="image" fetchpriority="high">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .wr-types { display:grid; grid-template-columns:repeat(2,1fr); gap:2px; background:oklch(88% .012 220); margin-top:52px; }
+    .wr-type-card { display:grid; grid-template-columns:200px 1fr; background:#fff; min-height:220px; }
+    .wr-type-card-img { position:relative; overflow:hidden; }
+    .wr-type-card-img img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease; }
+    .wr-type-card:hover .wr-type-card-img img { transform:scale(1.04); }
+    .wr-type-card-body { padding:28px 24px; }
+    .wr-type-card-eyebrow { font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--green-600); margin-bottom:8px; }
+    .wr-type-card-title { font-family:var(--display); font-size:20px; font-weight:500; color:var(--text-light); line-height:1.2; margin-bottom:10px; }
+    .wr-type-card-desc { font-size:13px; color:var(--text-muted-light); line-height:1.65; margin-bottom:14px; }
+    .wr-type-card-list { list-style:none; padding:0; display:flex; flex-direction:column; gap:5px; }
+    .wr-type-card-list li { font-size:12px; color:var(--text-muted-light); padding-left:16px; position:relative; }
+    .wr-type-card-list li::before { content:'✓'; position:absolute; left:0; color:var(--green-500); font-size:11px; top:1px; }
+    @media (max-width:900px) { .wr-types { grid-template-columns:1fr; } }
+    @media (max-width:600px) { .wr-type-card { grid-template-columns:1fr; } .wr-type-card-img { min-height:180px; } }
+  </style>
   <!-- Google Analytics 4: paste your measurement ID below to activate
   <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script>
@@ -130,6 +146,113 @@
     </div>
   </div>
 </div>
+
+<!-- WINDOW STYLES SECTION -->
+<section style="background:var(--cream-50); border-top:1px solid oklch(88% .012 220); padding:80px 60px;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div class="eyebrow-row reveal"><span class="eyebrow-rule"></span><span class="eyebrow-label">Window Styles</span></div>
+    <h2 class="display reveal">Window styles<br><em>we replace</em></h2>
+    <div class="wr-types reveal">
+
+      <div class="wr-type-card">
+        <div class="wr-type-card-img">
+          <img src="images/win-casement.webp" alt="Casement window replacement San Francisco Bay Area" width="200" height="220" loading="lazy">
+        </div>
+        <div class="wr-type-card-body">
+          <div class="wr-type-card-eyebrow">Most Requested</div>
+          <div class="wr-type-card-title">Casement Windows</div>
+          <p class="wr-type-card-desc">Opens outward on hinges for maximum ventilation and unobstructed views. The most popular replacement window in the Bay Area — especially in kitchens and living rooms.</p>
+          <ul class="wr-type-card-list">
+            <li>Full opening for maximum airflow</li>
+            <li>Excellent weather seal when closed</li>
+            <li>Vinyl, fiberglass, and wood-clad options</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wr-type-card">
+        <div class="wr-type-card-img">
+          <img src="images/win-double-hung.webp" alt="Double-hung window replacement San Francisco Victorian" width="200" height="220" loading="lazy">
+        </div>
+        <div class="wr-type-card-body">
+          <div class="wr-type-card-eyebrow">Victorian Staple</div>
+          <div class="wr-type-card-title">Double-Hung Windows</div>
+          <p class="wr-type-card-desc">Both sashes slide up and down independently — a classic look that suits San Francisco's Victorian and Edwardian homes perfectly. Easy to clean from inside.</p>
+          <ul class="wr-type-card-list">
+            <li>Tilting sashes for easy cleaning</li>
+            <li>Period-accurate profiles available</li>
+            <li>Ventilate from top, bottom, or both</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wr-type-card">
+        <div class="wr-type-card-img">
+          <img src="images/win-bay.webp" alt="Bay window replacement San Francisco home" width="200" height="220" loading="lazy">
+        </div>
+        <div class="wr-type-card-body">
+          <div class="wr-type-card-eyebrow">Adds Space &amp; Light</div>
+          <div class="wr-type-card-title">Bay &amp; Bow Windows</div>
+          <p class="wr-type-card-desc">Projects outward from the wall to create a dramatic focal point and additional interior space. A defining feature in San Francisco dining rooms and parlors.</p>
+          <ul class="wr-type-card-list">
+            <li>Adds floor space and architectural interest</li>
+            <li>Center picture pane with flanking casements</li>
+            <li>Custom seat-height options available</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wr-type-card">
+        <div class="wr-type-card-img">
+          <img src="images/win-picture.webp" alt="Picture window replacement Bay Area home" width="200" height="220" loading="lazy">
+        </div>
+        <div class="wr-type-card-body">
+          <div class="wr-type-card-eyebrow">Maximum View</div>
+          <div class="wr-type-card-title">Picture Windows</div>
+          <p class="wr-type-card-desc">Fixed glass with no moving parts — maximum light, unbeatable views, and the tightest energy seal of any window style. Ideal for framing Bay Area scenery.</p>
+          <ul class="wr-type-card-list">
+            <li>No operating hardware to wear out</li>
+            <li>Best energy performance of any style</li>
+            <li>Pairs well with operable flanking windows</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wr-type-card">
+        <div class="wr-type-card-img">
+          <img src="images/win-slider.webp" alt="Sliding window replacement San Francisco" width="200" height="220" loading="lazy">
+        </div>
+        <div class="wr-type-card-body">
+          <div class="wr-type-card-eyebrow">Wide Openings</div>
+          <div class="wr-type-card-title">Sliding Windows</div>
+          <p class="wr-type-card-desc">Panels glide horizontally on a track — a practical choice for wide openings where there's no room for an outward swing. Clean, modern aesthetic.</p>
+          <ul class="wr-type-card-list">
+            <li>No outward swing needed</li>
+            <li>Smooth stainless steel roller hardware</li>
+            <li>2-panel and 3-panel configurations</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wr-type-card">
+        <div class="wr-type-card-img">
+          <img src="images/win-awning.webp" alt="Awning window replacement San Francisco Bay Area" width="200" height="220" loading="lazy">
+        </div>
+        <div class="wr-type-card-body">
+          <div class="wr-type-card-eyebrow">Fog &amp; Rain Friendly</div>
+          <div class="wr-type-card-title">Awning Windows</div>
+          <p class="wr-type-card-desc">Hinged at the top and opens outward — lets fresh air in even during San Francisco's foggy, drizzly days. Perfect for bathrooms, kitchens, and basement levels.</p>
+          <ul class="wr-type-card-list">
+            <li>Ventilate even when it's raining</li>
+            <li>Excellent energy seal when closed</li>
+            <li>Often paired below picture windows</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <!-- STATS STRIP -->
 <div class="stats">
