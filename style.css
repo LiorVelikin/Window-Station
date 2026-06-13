@@ -467,11 +467,12 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
 
 /* ─── RESPONSIVE ─────────────────────────────────────────── */
 @media (max-width: 1100px) {
-  /* Nav: hamburger replaces links */
+  /* Nav: centered logo + hamburger on right */
   .nav, .nav.scrolled, .nav-scrolled-init { padding-left: 40px; padding-right: 40px; }
   .nav-hamburger { display: flex; }
   .btn-nav { display: none; }
   .nav-phone-link { display: none; }
+  .nav-logo { position: absolute; left: 50%; transform: translateX(-50%); }
   .nav-links {
     display: none; flex-direction: column; align-items: center; gap: 0;
     position: absolute; top: 100%; left: 0; right: 0;
@@ -552,7 +553,7 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
   .hero-sub { font-size: 15px; }
   .hero-actions { flex-direction: column; align-items: flex-start; gap: 20px; }
   .hero-scroll { display: none; }
-  .stats-inner { padding: 0 20px; grid-template-columns: 1fr 1fr; }
+  .stats { display: none; }
   .stat-num { font-size: 36px; }
   .stat-lbl { font-size: 11px; letter-spacing: .07em; }
   .about { padding: 64px 20px; }
@@ -621,6 +622,14 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
   /* ── Door pages ── */
   .door-entry-section { padding: 44px 20px 52px; }
   .door-feature-body { padding: 36px 20px; }
+  /* ── Cards ── */
+  .product-card-label { font-size: 11px; }
+  .product-card-body { padding: 20px 20px 24px; }
+  .product-card-title { font-size: 20px; }
+  /* ── Service row images: shorter on mobile ── */
+  .svc-row-img img { aspect-ratio: 16/9; min-height: unset !important; }
+  /* ── Reviews section ── */
+  .reviews { padding: 64px 20px; }
 }
 
 /* ─── REVIEWS ───────────────────────────────────────────── */
