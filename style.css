@@ -297,7 +297,7 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
 /* ─── ENERGY STRIP ───────────────────────────────────────── */
 .energy { background: var(--navy-950); padding: 100px 60px; position: relative; overflow: hidden; }
 .energy::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--green-500) 30%, var(--green-400) 70%, transparent); }
-.energy-bg-num { position: absolute; right: -20px; bottom: -40px; font-family: var(--display); font-size: clamp(200px,20vw,300px); font-weight: 600; color: oklch(42% 0.14 155 / .18); line-height: 1; letter-spacing: -.04em; pointer-events: none; user-select: none; }
+.energy-bg-num { position: absolute; right: -20px; bottom: -40px; font-family: var(--display); font-size: clamp(200px,20vw,300px); font-weight: 600; color: oklch(48% 0.17 155 / .45); line-height: 1; letter-spacing: -.04em; pointer-events: none; user-select: none; }
 .energy-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 60px; align-items: center; position: relative; z-index: 1; }
 .energy-head { font-family: var(--display); font-size: clamp(32px,4vw,52px); font-weight: 500; color: var(--text-dark); line-height: 1.15; letter-spacing: -.01em; }
 .energy-head em { font-style: italic; color: var(--green-500); }
@@ -382,6 +382,8 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
 /* ─── PRODUCT GRID ────────────────────────────────────────── */
 .section-pad { max-width: 1200px; margin: 0 auto; padding: 100px 60px; }
 .section-pad-sm { max-width: 1200px; margin: 0 auto; padding: 80px 60px; }
+/* Full-width outer section wrapper with responsive padding */
+.wrap-pad { padding: 80px 60px; }
 .product-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 56px; }
 .product-card { position: relative; overflow: hidden; background: white; border: 1px solid oklch(88% 0.012 220); transition: border-color .25s var(--ease-out), box-shadow .25s var(--ease-out); }
 .product-card:hover { border-color: oklch(72% 0.08 138); box-shadow: 0 4px 24px oklch(18% 0.09 262 / .06); }
@@ -498,6 +500,7 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
   .page-hero { padding-left: 40px; padding-right: 40px; }
   .section-pad { padding-left: 40px; padding-right: 40px; }
   .section-pad-sm { padding-left: 40px; padding-right: 40px; }
+  .wrap-pad { padding-left: 40px; padding-right: 40px; }
   .content-block { padding-left: 40px; padding-right: 40px; }
   .areas-grid { grid-template-columns: repeat(3, 1fr); }
 }
@@ -551,7 +554,7 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
   .hero-scroll { display: none; }
   .stats-inner { padding: 0 20px; grid-template-columns: 1fr 1fr; }
   .stat-num { font-size: 36px; }
-  .stat-lbl { font-size: 10px; letter-spacing: .08em; }
+  .stat-lbl { font-size: 11px; letter-spacing: .07em; }
   .about { padding: 64px 20px; }
   .services-hdr { padding: 64px 20px 40px; }
   .services-bottom { padding: 48px 20px; flex-direction: column; align-items: flex-start; }
@@ -584,6 +587,7 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
   .page-hero-actions .btn-primary, .page-hero-actions .btn-outline { width: 100%; justify-content: center; }
   .section-pad { padding: 64px 20px; }
   .section-pad-sm { padding: 48px 20px; }
+  .wrap-pad { padding: 56px 20px; }
   .content-block { padding: 56px 20px; gap: 32px; }
   .content-body h3 { font-size: clamp(24px, 6vw, 36px); }
   .product-cards { grid-template-columns: 1fr; }
@@ -595,6 +599,28 @@ h2.display-dark em { font-style: italic; color: var(--green-300); }
   h2.display, h2.display-dark { font-size: clamp(28px, 7vw, 40px); }
   .energy-badge { display: none; }
   .brands-grid { border-left: none; border-right: none; }
+  /* ── Label & accent text visibility ── */
+  .eyebrow-label { font-size: 11px; letter-spacing: .16em; }
+  .svc-row-num { font-size: 11px; }
+  /* ── Hero ── */
+  .hero { padding-bottom: 60px; }
+  .hero-actions .btn-primary { width: 100%; justify-content: center; }
+  /* ── About section layout ── */
+  .about-cta-row { flex-direction: column; align-items: flex-start; gap: 16px; margin-top: 24px; }
+  .about-cta-row .btn-primary { width: 100%; justify-content: center; }
+  .about-phone-link { font-size: 16px; }
+  .trust-row { gap: 14px; }
+  /* ── Process ── */
+  .step { padding-right: 0; }
+  .process-cta-text { font-size: clamp(20px, 5.5vw, 26px); }
+  /* ── Brands tighter ── */
+  .brand { padding: 26px 14px; }
+  .brand-name { font-size: 18px; }
+  /* ── Mid-CTA ── */
+  .mid-cta-phone { font-size: 18px; }
+  /* ── Door pages ── */
+  .door-entry-section { padding: 44px 20px 52px; }
+  .door-feature-body { padding: 36px 20px; }
 }
 
 /* ─── REVIEWS ───────────────────────────────────────────── */

@@ -28,6 +28,10 @@
   <link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .trust-grid { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:40px; align-items:center; }
+    @media (max-width:640px) { .trust-grid { grid-template-columns:repeat(2,1fr); gap:24px; } }
+  </style>
   <!-- Google Analytics 4: paste your measurement ID below to activate
   <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script>
@@ -163,8 +167,8 @@
 </section>
 
 <!-- TRUST STRIP -->
-<section style="background:var(--fog-100); border-top: 1px solid oklch(88% 0.012 220); padding: 72px 60px;">
-  <div style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:40px; align-items:center;">
+<section class="wrap-pad" style="background:var(--fog-100); border-top: 1px solid oklch(88% 0.012 220);">
+  <div class="trust-grid">
     <div class="reveal" style="text-align:center;">
       <div style="font-family:var(--display); font-size:36px; font-weight:600; color:var(--text-light);">30<span style="color:var(--green-600);">+</span></div>
       <div style="font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--text-muted-light); margin-top:4px;">Years in Business</div>

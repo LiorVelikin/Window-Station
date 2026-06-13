@@ -144,30 +144,113 @@
   </div>
 </div>
 
-<!-- TESTIMONIALS -->
-<section style="background:var(--fog-100); border-top: 1px solid oklch(88% 0.012 220);">
-  <div class="section-pad">
-    <div class="eyebrow-row reveal"><span class="eyebrow-rule"></span><span class="eyebrow-label">Reviews</span></div>
-    <h2 class="display reveal">What our <em>customers</em> say</h2>
-    <div class="testimonials-grid reveal">
-      <div class="testimonial-card">
-        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <div class="testimonial-text">"Outstanding company. They replaced all 11 windows in our Outer Sunset Victorian in a single day. Crew arrived on time, worked cleanly, and left the house spotless. The new windows look incredible and our energy bills have dropped."</div>
-        <div class="testimonial-author">Catherine M.</div>
-        <div class="testimonial-location">Outer Sunset, San Francisco</div>
+<!-- REVIEWS -->
+<section class="reviews" id="reviews" aria-label="Customer reviews">
+  <div class="reviews-inner">
+    <div class="reviews-hdr reveal">
+      <a href="https://www.yelp.com/biz/window-station-san-francisco-2" target="_blank" rel="noopener" class="reviews-yelp-logo-link">
+        <img src="images/yelp-logo.png" alt="Yelp" class="reviews-yelp-logo" width="120" height="60">
+      </a>
+      <div class="reviews-rating-row">
+        <span class="reviews-rating-stars" aria-hidden="true">★★★★★</span>
+        <span class="reviews-rating-num">4.9</span>
+        <span class="reviews-rating-divider" aria-hidden="true"></span>
+        <span class="reviews-rating-count">200+ reviews</span>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <div class="testimonial-text">"We had several quotes and SF Window Station offered the best combination of price, product knowledge, and professionalism. The fiberglass windows they installed on our 1920s bungalow look exactly like the originals — but so much better."</div>
-        <div class="testimonial-author">David R.</div>
-        <div class="testimonial-location">Rockridge, Oakland</div>
+      <h2>Bay Area homeowners<br><em>trust us with their homes</em></h2>
+      <div class="reviews-nav">
+        <button class="reviews-nav-btn" id="reviews-prev" aria-label="Previous reviews" disabled>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M11 4l-5 5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="reviews-nav-btn" id="reviews-next" aria-label="Next reviews">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M7 4l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <div class="testimonial-text">"From estimate to installation, the whole process was easy and transparent. No upselling, no pressure. The crew was polite and skilled. I've referred them to three neighbors already."</div>
-        <div class="testimonial-author">Margaret L.</div>
-        <div class="testimonial-location">Walnut Creek, CA</div>
+    </div>
+
+    <div class="reviews-grid" id="reviews-grid">
+
+      <div class="review-card reveal">
+        <div class="review-card-stars" aria-label="5 stars">★★★★★</div>
+        <div class="review-card-body"><p class="review-card-quote">"Outstanding company. They replaced all 11 windows in our Outer Sunset Victorian in a single day. Crew arrived on time, worked cleanly, and left the house spotless. The new windows look incredible and our energy bills have dropped noticeably since."</p></div>
+        <div class="review-card-footer">
+          <div><div class="review-card-name">Catherine M.</div><div class="review-card-location">Outer Sunset, San Francisco</div></div>
+          <div class="review-card-date">Jan 2026</div>
+        </div>
       </div>
+
+      <div class="review-card reveal d1">
+        <div class="review-card-stars" aria-label="5 stars">★★★★★</div>
+        <div class="review-card-body"><p class="review-card-quote">"We had an absolutely incredible experience with Window Station! Leon and his team truly exceeded all expectations. What really stood out was not just the service, but the value — after getting multiple quotes, Window Station offered a more competitive price AND a better-quality product than the others."</p></div>
+        <div class="review-card-footer">
+          <div><div class="review-card-name">Stephen H.</div><div class="review-card-location">Daly City, CA</div></div>
+          <div class="review-card-date">Mar 2026</div>
+        </div>
+      </div>
+
+      <div class="review-card reveal d2">
+        <div class="review-card-stars" aria-label="5 stars">★★★★★</div>
+        <div class="review-card-body"><p class="review-card-quote">"I wish I could give this company 10 times as many rating stars. Sergey and Elisey took as long as was needed — no shortcuts — to give us a truly great new soundproof sliding glass door and three new windows. The quality of the work and products are unmatched."</p></div>
+        <div class="review-card-footer">
+          <div><div class="review-card-name">Robert S.</div><div class="review-card-location">San Francisco, CA</div></div>
+          <div class="review-card-date">Sep 2025</div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-card-stars" aria-label="5 stars">★★★★★</div>
+        <div class="review-card-body"><p class="review-card-quote">"We had several quotes and SF Window Station offered the best combination of price, product knowledge, and professionalism. The fiberglass windows they installed on our 1920s bungalow look exactly like the originals — but so much better in every way."</p></div>
+        <div class="review-card-footer">
+          <div><div class="review-card-name">David R.</div><div class="review-card-location">Rockridge, Oakland</div></div>
+          <div class="review-card-date">Nov 2025</div>
+        </div>
+      </div>
+
+      <div class="review-card reveal d1">
+        <div class="review-card-stars" aria-label="5 stars">★★★★★</div>
+        <div class="review-card-body"><p class="review-card-quote">"Vadim and Leon are very responsive, with great communication on scheduling. Sergei and Oleg performed excellent work on my whole house windows and doors. They meticulously removed my old single pane aluminum windows and kept my interior tile clad window frame intact — which was hard to do, and they did it flawlessly."</p></div>
+        <div class="review-card-footer">
+          <div><div class="review-card-name">Lillian C.</div><div class="review-card-location">San Francisco, CA</div></div>
+          <div class="review-card-date">Nov 2024</div>
+        </div>
+      </div>
+
+      <div class="review-card reveal d2">
+        <div class="review-card-stars" aria-label="5 stars">★★★★★</div>
+        <div class="review-card-body"><p class="review-card-quote">"From estimate to installation, the whole process was easy and transparent. No upselling, no pressure. The crew was polite and skilled. I've referred them to three neighbors already and would use them again without hesitation."</p></div>
+        <div class="review-card-footer">
+          <div><div class="review-card-name">Margaret L.</div><div class="review-card-location">Walnut Creek, CA</div></div>
+          <div class="review-card-date">Aug 2025</div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-card-stars" aria-label="5 stars">★★★★★</div>
+        <div class="review-card-body"><p class="review-card-quote">"This is an excellent company. They came out promptly, gave us a very fair price — half the cost of a company that advertises heavily — and the windows were installed in one day. Over a year later and we are still very happy with the results."</p></div>
+        <div class="review-card-footer">
+          <div><div class="review-card-name">Lary S.</div><div class="review-card-location">San Francisco, CA</div></div>
+          <div class="review-card-date">Mar 2025</div>
+        </div>
+      </div>
+
+      <div class="review-card reveal d1">
+        <div class="review-card-stars" aria-label="5 stars">★★★★★</div>
+        <div class="review-card-body"><p class="review-card-quote">"Window Station replaced all 5 windows of my San Francisco single family home. The whole process from quoting to project management, installation, and finally building inspection was very well managed and efficient. Highly recommended."</p></div>
+        <div class="review-card-footer">
+          <div><div class="review-card-name">Ralph M.</div><div class="review-card-location">Sunnyvale, CA</div></div>
+          <div class="review-card-date">Jul 2025</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="reviews-yelp reveal">
+      <p class="reviews-yelp-note">Join 200+ satisfied Bay Area homeowners</p>
+      <a href="https://www.yelp.com/biz/window-station-san-francisco-2" target="_blank" rel="noopener" class="reviews-yelp-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.111 18.226c-.141.969-2.119 3.483-3.029 3.847-.311.124-.611.094-.85-.09-.154-.12-.314-.365-2.447-3.827l-.633-1.032c-.244-.371-.18-.874.15-1.172a1.03 1.03 0 0 1 1.16-.162l1.082.479c3.557 1.576 3.802 1.74 3.932 1.902.233.291.27.658.065.055zm-4.26-7.07a1.03 1.03 0 0 1-.537 1.092c-.309.162-5.43 2.063-5.43 2.063-.456.175-.956-.028-1.12-.455-.163-.426.057-.895.495-1.053l4.986-1.843c.011-.004.022-.007.033-.01.397-.109.824.075.972.461l.006.018-.004-.004.005-.003c-.135-.424.065-.891.482-1.074.441-.19.951.007 1.112.447zm-4.75 3.747v.04zm-.516-8.862l.516 8.822v-8.822zm.516 8.822c-4.006.126-5.073.17-5.418.109-.456-.081-.764-.467-.749-.94.014-.47.339-.839.799-.9l1.161-.151c3.825-.503 4.094-.505 4.359-.361.37.205.527.635.41 1.062-.069.251-.26.48-.562.18zm-8.27-8.617c.471-.861 3.434-2.647 4.415-2.673.33-.009.607.141.77.41.107.179.167.546-1.07 4.42l-.367 1.162a1.033 1.033 0 0 1-1.059.724 1.032 1.032 0 0 1-.933-.875l-.152-1.175c-.488-3.824-.54-4.108-.452-4.268l-.002.003-.006-.006.035-.004c-.141-.327-.036-.707.282-.902l.01-.006h.009l.52.19zm11.354-3.62C14.32.786 11.986 0 11.986 0 11.986 0 9.652.786 9.185 2.626c-.467 1.84.869 3.447 2.801 3.447s3.268-1.607 2.801-3.447h-.003z"/></svg>
+        Read all 200+ reviews on Yelp
+        <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
     </div>
   </div>
 </section>
@@ -227,6 +310,19 @@
       hamburger.classList.toggle('open', open);
       hamburger.setAttribute('aria-expanded', open);
     });
+  }
+  const rg = document.getElementById('reviews-grid');
+  const rPrev = document.getElementById('reviews-prev');
+  const rNext = document.getElementById('reviews-next');
+  if (rg && rPrev && rNext) {
+    const updateNav = () => {
+      rPrev.disabled = rg.scrollLeft <= 1;
+      rNext.disabled = rg.scrollLeft + rg.clientWidth >= rg.scrollWidth - 1;
+    };
+    rNext.addEventListener('click', () => rg.scrollBy({ left: rg.clientWidth, behavior: 'smooth' }));
+    rPrev.addEventListener('click', () => rg.scrollBy({ left: -rg.clientWidth, behavior: 'smooth' }));
+    rg.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
   }
 }());
 </script>
