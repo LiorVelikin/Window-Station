@@ -23,16 +23,6 @@
   <link rel="preload" href="images/win-double-hung.webp" as="image" fetchpriority="high">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Window type icon strip */
-    .wt-strip { display:grid; grid-template-columns:repeat(6,1fr); gap:0; }
-    .wt-card { background:transparent; padding:44px 18px 40px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px; border-right:1px solid oklch(28% .022 240); border-top:2px solid transparent; transition:border-top-color .25s, background .25s; cursor:default; }
-    .wt-card:last-child { border-right:none; }
-    .wt-card:hover { border-top-color:var(--green-500); background:oklch(22% .024 240); }
-    .wt-card-icon { color:oklch(62% .16 155); transition:color .25s; }
-    .wt-card:hover .wt-card-icon { color:var(--green-500); }
-    .wt-card-title { font-family:var(--display); font-size:18px; font-weight:500; color:oklch(94% .007 230); letter-spacing:.01em; }
-    .wt-card-desc { font-size:11px; color:oklch(50% .016 230); line-height:1.55; letter-spacing:.01em; }
-
     /* Inline CTA strip */
     .inline-cta { background:var(--green-600); padding:44px 60px; }
     .inline-cta-inner { max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap; }
@@ -81,12 +71,10 @@
 
     @media (max-width:1024px) { .wr-materials { grid-template-columns:repeat(2,1fr); } }
     @media (max-width:900px) {
-      .wt-strip { grid-template-columns:repeat(3,1fr); }
       .wr-showcase { grid-template-columns:1fr; gap:20px; }
       .wr-materials { grid-template-columns:repeat(2,1fr); }
       .wr-gallery { grid-template-columns:1fr 1fr; }
     }
-    @media (max-width:700px) { .wt-strip { grid-template-columns:repeat(2,1fr); } }
     @media (max-width:600px) {
       .wr-gallery { grid-template-columns:1fr; }
       .wr-card-body { padding:24px; }
@@ -147,96 +135,6 @@
     <div class="stat reveal d1"><div class="stat-num"><span>10K</span><sup>+</sup></div><div class="stat-lbl">Windows Replaced</div></div>
     <div class="stat reveal d2"><div class="stat-num"><span>40</span><sup>%</sup></div><div class="stat-lbl">Max Energy Savings</div></div>
     <div class="stat reveal d3"><div class="stat-num"><span>1</span></div><div class="stat-lbl">Day Installation Typical</div></div>
-  </div>
-</div>
-
-<!-- 3. WINDOW TYPE STRIP — scope at a glance -->
-<div style="background:var(--navy-950);">
-  <div style="max-width:1200px; margin:0 auto; padding:0 60px;">
-    <div class="wt-strip reveal">
-
-      <div class="wt-card">
-        <div class="wt-card-icon">
-          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="42" height="42" rx="1.5"/>
-            <line x1="30" y1="4" x2="30" y2="44"/>
-            <circle cx="30" cy="13" r="1.5" fill="currentColor" stroke="none"/>
-            <circle cx="30" cy="35" r="1.5" fill="currentColor" stroke="none"/>
-            <polyline points="20,20 14,24 20,28"/>
-          </svg>
-        </div>
-        <div class="wt-card-title">Casement</div>
-        <div class="wt-card-desc">Full opening, maximum airflow</div>
-      </div>
-
-      <div class="wt-card">
-        <div class="wt-card-icon">
-          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="42" height="42" rx="1.5"/>
-            <line x1="4" y1="24" x2="44" y2="24"/>
-            <polyline points="18,14 24,8 30,14"/>
-            <polyline points="18,34 24,40 30,34"/>
-          </svg>
-        </div>
-        <div class="wt-card-title">Double-Hung</div>
-        <div class="wt-card-desc">Both sashes slide — classic for Victorian homes</div>
-      </div>
-
-      <div class="wt-card">
-        <div class="wt-card-icon">
-          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="4" y1="44" x2="14" y2="8"/>
-            <line x1="14" y1="8" x2="24" y2="4"/>
-            <line x1="24" y1="4" x2="34" y2="8"/>
-            <line x1="34" y1="8" x2="44" y2="44"/>
-            <line x1="4" y1="44" x2="44" y2="44"/>
-            <line x1="14" y1="8" x2="14" y2="44"/>
-            <line x1="34" y1="8" x2="34" y2="44"/>
-          </svg>
-        </div>
-        <div class="wt-card-title">Bay &amp; Bow</div>
-        <div class="wt-card-desc">Projects outward, light from three angles</div>
-      </div>
-
-      <div class="wt-card">
-        <div class="wt-card-icon">
-          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="42" height="42" rx="1.5"/>
-            <rect x="9" y="9" width="30" height="30" rx="1"/>
-          </svg>
-        </div>
-        <div class="wt-card-title">Picture</div>
-        <div class="wt-card-desc">Fixed glass, best energy performance</div>
-      </div>
-
-      <div class="wt-card">
-        <div class="wt-card-icon">
-          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="42" height="42" rx="1.5"/>
-            <line x1="24" y1="4" x2="24" y2="44"/>
-            <polyline points="14,20 8,24 14,28"/>
-            <polyline points="34,20 40,24 34,28"/>
-          </svg>
-        </div>
-        <div class="wt-card-title">Slider</div>
-        <div class="wt-card-desc">Glides horizontally, no swing space needed</div>
-      </div>
-
-      <div class="wt-card">
-        <div class="wt-card-icon">
-          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="42" height="42" rx="1.5"/>
-            <line x1="4" y1="16" x2="44" y2="16"/>
-            <circle cx="12" cy="16" r="1.5" fill="currentColor" stroke="none"/>
-            <circle cx="36" cy="16" r="1.5" fill="currentColor" stroke="none"/>
-            <path d="M14 34 Q24 44 34 34"/>
-          </svg>
-        </div>
-        <div class="wt-card-title">Awning</div>
-        <div class="wt-card-desc">Ventilates even in SF fog and drizzle</div>
-      </div>
-
-    </div>
   </div>
 </div>
 
