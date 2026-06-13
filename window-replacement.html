@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="preload" href="images/win-casement.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="images/win-double-hung.webp" as="image" fetchpriority="high">
   <link rel="stylesheet" href="style.css">
   <style>
     /* Window type icon strip */
@@ -32,6 +32,21 @@
     .wt-card:hover .wt-card-icon { color:var(--green-500); }
     .wt-card-title { font-family:var(--display); font-size:18px; font-weight:500; color:oklch(94% .007 230); letter-spacing:.01em; }
     .wt-card-desc { font-size:11px; color:oklch(50% .016 230); line-height:1.55; letter-spacing:.01em; }
+
+    /* Inline CTA strip */
+    .inline-cta { background:var(--green-600); padding:44px 60px; }
+    .inline-cta-inner { max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap; }
+    .inline-cta-text p { font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:oklch(88% .08 155); margin-bottom:10px; }
+    .inline-cta-text h3 { font-family:var(--display); font-size:34px; font-weight:500; color:#fff; line-height:1.1; }
+    .inline-cta-actions { display:flex; align-items:center; gap:28px; flex-shrink:0; }
+    .inline-cta-phone { color:oklch(88% .06 180); font-size:15px; font-weight:500; text-decoration:none; letter-spacing:.01em; white-space:nowrap; }
+    .inline-cta-phone:hover { color:#fff; }
+    @media (max-width:760px) {
+      .inline-cta { padding:40px 32px; }
+      .inline-cta-text h3 { font-size:26px; }
+      .inline-cta-actions { gap:20px; }
+    }
+    @media (max-width:560px) { .inline-cta-inner { flex-direction:column; align-items:flex-start; } }
 
     /* Window styles showcase grid */
     .wr-showcase { display:grid; grid-template-columns:repeat(2,1fr); gap:32px; margin-top:52px; }
@@ -71,16 +86,12 @@
       .wr-materials { grid-template-columns:repeat(2,1fr); }
       .wr-gallery { grid-template-columns:1fr 1fr; }
     }
-    @media (max-width:700px) {
-      .wt-strip { grid-template-columns:repeat(2,1fr); }
-    }
+    @media (max-width:700px) { .wt-strip { grid-template-columns:repeat(2,1fr); } }
     @media (max-width:600px) {
       .wr-gallery { grid-template-columns:1fr; }
       .wr-card-body { padding:24px; }
     }
-    @media (max-width:420px) {
-      .wr-materials { grid-template-columns:1fr; }
-    }
+    @media (max-width:420px) { .wr-materials { grid-template-columns:1fr; } }
   </style>
   <!-- Google Analytics 4: paste your measurement ID below to activate
   <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -108,6 +119,7 @@
   </div>
 </nav>
 
+<!-- 1. HERO — hook & primary CTA -->
 <header class="page-hero">
   <div class="page-hero-bg" style="background-image:url('images/win-double-hung.webp')"></div>
   <div class="page-hero-inner">
@@ -128,7 +140,17 @@
   </div>
 </header>
 
-<!-- WINDOW TYPE STRIP -->
+<!-- 2. STATS — immediate credibility -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat reveal"><div class="stat-num"><span>30</span><sup>+</sup></div><div class="stat-lbl">Years of Bay Area Experience</div></div>
+    <div class="stat reveal d1"><div class="stat-num"><span>10K</span><sup>+</sup></div><div class="stat-lbl">Windows Replaced</div></div>
+    <div class="stat reveal d2"><div class="stat-num"><span>40</span><sup>%</sup></div><div class="stat-lbl">Max Energy Savings</div></div>
+    <div class="stat reveal d3"><div class="stat-num"><span>1</span></div><div class="stat-lbl">Day Installation Typical</div></div>
+  </div>
+</div>
+
+<!-- 3. WINDOW TYPE STRIP — scope at a glance -->
 <div style="background:var(--navy-950);">
   <div style="max-width:1200px; margin:0 auto; padding:0 60px;">
     <div class="wt-strip reveal">
@@ -218,7 +240,7 @@
   </div>
 </div>
 
-<!-- CONTENT BLOCKS -->
+<!-- 4. PROBLEM AWARENESS — 8 signs -->
 <div class="content-section">
   <div class="content-block reveal">
     <div class="content-img">
@@ -237,49 +259,28 @@
         <li>Increased outside noise entering the home</li>
         <li>Windows over 20 years old with no prior replacement</li>
       </ul>
-      <a href="contact.html" class="btn-primary" style="display:inline-flex;">
-        <span>Book Free Inspection</span>
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
-  </div>
-
-  <div class="content-block reveal">
-    <div class="content-body">
-      <div class="eyebrow-row"><span class="eyebrow-rule"></span><span class="eyebrow-label">Our Process</span></div>
-      <h3>Replacement done right,<br>from <em>start to finish</em></h3>
-      <p>We handle every step of your window replacement project — from the first in-home visit through final inspection. Here's what to expect:</p>
-      <ul>
-        <li><strong>Free in-home estimate:</strong> We measure, assess your existing frames, and recommend the best replacement strategy for your home</li>
-        <li><strong>Written proposal:</strong> Detailed scope, product specs, pricing, and timeline — no surprises</li>
-        <li><strong>Installation day:</strong> Old windows removed, openings prepared, new windows installed, interior and exterior trimmed and caulked</li>
-        <li><strong>Cleanup and walkthrough:</strong> Job site left clean; we walk through every window together before leaving</li>
-      </ul>
-    </div>
-    <div class="content-img">
-      <img src="images/material-vinyl.webp" alt="Newly replaced vinyl windows on San Francisco home exterior" width="600" height="450" loading="lazy">
-    </div>
-  </div>
-
-  <div class="content-block reveal">
-    <div class="content-img">
-      <img src="images/win-bay.webp" alt="Bay window replacement in San Francisco dining room" width="600" height="450" loading="lazy">
-    </div>
-    <div class="content-body">
-      <div class="eyebrow-row"><span class="eyebrow-rule"></span><span class="eyebrow-label">Energy &amp; Savings</span></div>
-      <h3>Cut energy costs<br>by up to <em>40%</em></h3>
-      <p>Modern Energy Star certified windows can reduce heating and cooling costs significantly in Bay Area homes. With our fog, coastal winds, and temperature differentials, high-performance double or triple-pane glass makes a real difference year-round.</p>
-      <ul>
-        <li>Low-E glass coatings block heat transfer while allowing full natural light</li>
-        <li>Argon-gas-filled panes dramatically improve insulating R-value</li>
-        <li>Federal tax credits may apply for certified energy-efficient replacements</li>
-        <li>Utility rebates available through PG&amp;E for qualifying installations</li>
-      </ul>
     </div>
   </div>
 </div>
 
-<!-- WINDOW STYLES SHOWCASE -->
+<!-- 5. INLINE CTA — catch early converters -->
+<div class="inline-cta reveal">
+  <div class="inline-cta-inner">
+    <div class="inline-cta-text">
+      <p>Sound familiar?</p>
+      <h3>Get your free in-home estimate today</h3>
+    </div>
+    <div class="inline-cta-actions">
+      <a href="#contact" class="btn-cta-light">
+        <span>Book Free Estimate</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="tel:4152954502" class="inline-cta-phone">415-295-4502</a>
+    </div>
+  </div>
+</div>
+
+<!-- 6. WINDOW STYLES SHOWCASE — product depth -->
 <section style="background:#fff; border-top:1px solid oklch(88% .012 220); padding:80px 60px;">
   <div style="max-width:1200px; margin:0 auto;">
     <div class="eyebrow-row reveal"><span class="eyebrow-rule"></span><span class="eyebrow-label">Window Styles</span></div>
@@ -392,7 +393,7 @@
   </div>
 </section>
 
-<!-- FRAME MATERIALS -->
+<!-- 7. FRAME MATERIALS — help them choose -->
 <section style="background:var(--cream-50); border-top:1px solid oklch(88% .012 220); padding:80px 60px;">
   <div style="max-width:1200px; margin:0 auto;">
     <div class="eyebrow-row reveal"><span class="eyebrow-rule"></span><span class="eyebrow-label">Frame Materials</span></div>
@@ -484,7 +485,44 @@
   </div>
 </section>
 
-<!-- RECENT PROJECTS -->
+<!-- 8. PROCESS + ENERGY — reduce friction, justify ROI -->
+<div class="content-section">
+  <div class="content-block reveal">
+    <div class="content-body">
+      <div class="eyebrow-row"><span class="eyebrow-rule"></span><span class="eyebrow-label">Our Process</span></div>
+      <h3>Replacement done right,<br>from <em>start to finish</em></h3>
+      <p>We handle every step of your window replacement project — from the first in-home visit through final inspection. Here's what to expect:</p>
+      <ul>
+        <li><strong>Free in-home estimate:</strong> We measure, assess your existing frames, and recommend the best replacement strategy for your home</li>
+        <li><strong>Written proposal:</strong> Detailed scope, product specs, pricing, and timeline — no surprises</li>
+        <li><strong>Installation day:</strong> Old windows removed, openings prepared, new windows installed, interior and exterior trimmed and caulked</li>
+        <li><strong>Cleanup and walkthrough:</strong> Job site left clean; we walk through every window together before leaving</li>
+      </ul>
+    </div>
+    <div class="content-img">
+      <img src="images/material-vinyl.webp" alt="Newly replaced vinyl windows on San Francisco home exterior" width="600" height="450" loading="lazy">
+    </div>
+  </div>
+
+  <div class="content-block reveal">
+    <div class="content-img">
+      <img src="images/win-bay.webp" alt="Bay window replacement in San Francisco dining room" width="600" height="450" loading="lazy">
+    </div>
+    <div class="content-body">
+      <div class="eyebrow-row"><span class="eyebrow-rule"></span><span class="eyebrow-label">Energy &amp; Savings</span></div>
+      <h3>Cut energy costs<br>by up to <em>40%</em></h3>
+      <p>Modern Energy Star certified windows can reduce heating and cooling costs significantly in Bay Area homes. With our fog, coastal winds, and temperature differentials, high-performance double or triple-pane glass makes a real difference year-round.</p>
+      <ul>
+        <li>Low-E glass coatings block heat transfer while allowing full natural light</li>
+        <li>Argon-gas-filled panes dramatically improve insulating R-value</li>
+        <li>Federal tax credits may apply for certified energy-efficient replacements</li>
+        <li>Utility rebates available through PG&amp;E for qualifying installations</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 9. RECENT PROJECTS — social proof -->
 <section style="background:#fff; border-top:1px solid oklch(88% .012 220); padding:80px 60px;">
   <div style="max-width:1200px; margin:0 auto;">
     <div class="eyebrow-row reveal"><span class="eyebrow-rule"></span><span class="eyebrow-label">Recent Installations</span></div>
@@ -497,17 +535,7 @@
   </div>
 </section>
 
-<!-- STATS STRIP -->
-<div class="stats">
-  <div class="stats-inner">
-    <div class="stat reveal"><div class="stat-num"><span>30</span><sup>+</sup></div><div class="stat-lbl">Years of Bay Area Experience</div></div>
-    <div class="stat reveal d1"><div class="stat-num"><span>10K</span><sup>+</sup></div><div class="stat-lbl">Windows Replaced</div></div>
-    <div class="stat reveal d2"><div class="stat-num"><span>40</span><sup>%</sup></div><div class="stat-lbl">Max Energy Savings</div></div>
-    <div class="stat reveal d3"><div class="stat-num"><span>1</span></div><div class="stat-lbl">Day Installation Typical</div></div>
-  </div>
-</div>
-
-<!-- MID CTA -->
+<!-- 10. MID CTA — emotional close -->
 <div class="mid-cta">
   <div class="mid-cta-inner">
     <div class="reveal">
@@ -515,7 +543,7 @@
       <div class="mid-cta-sub">A free in-home estimate takes less than an hour and tells you exactly what replacing your windows will cost — and save — over time.</div>
     </div>
     <div class="mid-cta-actions reveal d1">
-      <a href="contact.html" class="btn-cta-light">
+      <a href="#contact" class="btn-cta-light">
         <span>Book Free Estimate</span>
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
@@ -527,7 +555,7 @@
   </div>
 </div>
 
-<!-- CONTACT -->
+<!-- 11. CONTACT FORM — the close -->
 <section class="contact" id="contact" aria-label="Request a free window replacement estimate">
   <div class="reveal">
     <div class="eyebrow-row"><span class="eyebrow-rule"></span><span class="eyebrow-label">Free Estimate</span></div>
