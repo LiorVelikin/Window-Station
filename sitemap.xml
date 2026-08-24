@@ -1,31 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core pages -->
-  <url><loc>https://liorvelikin.github.io/Window-Station/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/windows.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/doors.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/patio-doors.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/entry-doors.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/estimate.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://sfwindowstation.example.com/window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/windows.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/doors.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://sfwindowstation.example.com/patio-doors.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/entry-doors.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sfwindowstation.example.com/estimate.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <!-- Window material pages -->
-  <url><loc>https://liorvelikin.github.io/Window-Station/vinyl-windows.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/fiberglass-windows.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/wood-windows.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/aluminum-windows.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sfwindowstation.example.com/vinyl-windows.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sfwindowstation.example.com/fiberglass-windows.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sfwindowstation.example.com/wood-windows.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sfwindowstation.example.com/aluminum-windows.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- City landing pages (Google Ads / local SEO) -->
+  <url><loc>https://sfwindowstation.example.com/san-francisco-window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/daly-city-window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/south-san-francisco-window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/san-bruno-window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/millbrae-window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/burlingame-window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/san-mateo-window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/foster-city-window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/san-carlos-window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/redwood-city-window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/menlo-park-window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sfwindowstation.example.com/palo-alto-window-replacement.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <!-- Company pages -->
-  <url><loc>https://liorvelikin.github.io/Window-Station/service-areas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/gallery.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/faq.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://sfwindowstation.example.com/service-areas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sfwindowstation.example.com/gallery.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sfwindowstation.example.com/faq.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sfwindowstation.example.com/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <!-- Blog -->
-  <url><loc>https://liorvelikin.github.io/Window-Station/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/blog-sf-window-permits.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/blog-fog-salt-air-windows.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/blog-window-replacement-cost-sf.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/blog-vinyl-vs-fiberglass-windows.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/blog-best-windows-victorian-homes.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/blog-repair-vs-replace-windows.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://liorvelikin.github.io/Window-Station/blog-energy-star-california.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sfwindowstation.example.com/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sfwindowstation.example.com/blog-sf-window-permits.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sfwindowstation.example.com/blog-fog-salt-air-windows.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sfwindowstation.example.com/blog-window-replacement-cost-sf.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sfwindowstation.example.com/blog-vinyl-vs-fiberglass-windows.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sfwindowstation.example.com/blog-best-windows-victorian-homes.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sfwindowstation.example.com/blog-repair-vs-replace-windows.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sfwindowstation.example.com/blog-energy-star-california.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

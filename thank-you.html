@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | SF Window Station</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://sfwindowstation.example.com/thank-you.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .ty-page { min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: 130px 24px 80px; background: var(--cream-50); }
+    .ty-page-inner { max-width: 480px; }
+  </style>
+  <!-- Google Analytics 4: paste your measurement ID below to activate
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script>
+  -->
+</head>
+<body>
+
+<nav class="nav nav-scrolled-init" id="nav" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo" aria-label="SF Window Station home">
+    <img src="images/logo.webp" alt="San Francisco Window Station logo" width="258" height="64">
+  </a>
+  <ul class="nav-links" id="nav-links" role="list">
+    <li><a href="window-replacement.html">Window Replacement</a></li>
+    <li><a href="patio-doors.html">Sliding Doors</a></li><li><a href="entry-doors.html">Entry Doors</a></li>
+    <li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li>
+    <li><a href="service-areas.html">Service Areas</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="tel:4152954502" class="nav-phone-link">415-295-4502</a>
+    <a href="estimate.html" class="btn-nav active"><span>Free Estimate</span></a>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main class="ty-page">
+  <div class="ty-page-inner wizard-success">
+    <div class="wizard-success-icon" aria-hidden="true">&#10003;</div>
+    <h2>Thanks &mdash; we got your message!</h2>
+    <p>A real person from our Bay Area office will reach out within 1 business day to schedule your free in-home estimate. Want to talk sooner?</p>
+    <div class="call-row">
+      <a href="tel:4152954502" class="btn-primary"><span>Call 415-295-4502</span></a>
+    </div>
+    <p style="margin-top:22px; font-size:13px;"><a href="index.html" style="color:inherit; text-decoration:underline;">&larr; Back to Home</a></p>
+  </div>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 60), { passive: true });
+  const hamburger = document.getElementById('nav-hamburger');
+  const navLinks = document.getElementById('nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+    });
+  }
+}());
+</script>
+</body>
+</html>

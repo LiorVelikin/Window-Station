@@ -4,20 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Free Window &amp; Door Estimate | SF Window Station</title>
-  <meta name="description" content="Request a free in-home window or door estimate from SF Window Station. Serving San Francisco, Oakland, Walnut Creek, Concord &amp; the entire Bay Area. CA Lic #976606. No pressure, no obligation.">
-  <link rel="canonical" href="https://liorvelikin.github.io/Window-Station/contact.html">
+  <meta name="description" content="Request a free in-home window or door estimate from SF Window Station. Serving San Francisco &amp; the Peninsula. CA Lic #976606. No pressure, no obligation.">
+  <link rel="canonical" href="https://sfwindowstation.example.com/contact.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Free Window &amp; Door Estimate | SF Window Station">
-  <meta property="og:description" content="Request a free in-home window or door estimate from SF Window Station. Serving San Francisco, Oakland, Walnut Creek, Concord &amp; the entire Bay Area. CA Lic #976606. No pressure, no obligation.">
-  <meta property="og:url" content="https://liorvelikin.github.io/Window-Station/contact.html">
-  <meta property="og:image" content="https://liorvelikin.github.io/Window-Station/images/og-image.jpg">
+  <meta property="og:description" content="Request a free in-home window or door estimate from SF Window Station. Serving San Francisco &amp; the Peninsula. CA Lic #976606. No pressure, no obligation.">
+  <meta property="og:url" content="https://sfwindowstation.example.com/contact.html">
+  <meta property="og:image" content="https://sfwindowstation.example.com/images/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "San Francisco Window Station",
-    "url": "https://liorvelikin.github.io/Window-Station/",
+    "url": "https://sfwindowstation.example.com/",
     "telephone": ["+14152954502", "+18003420308"],
     "address": {"@type":"PostalAddress","streetAddress":"1130 Burnett Ave #N","addressLocality":"Concord","addressRegion":"CA","postalCode":"94520","addressCountry":"US"},
     "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-15:00"],
@@ -34,7 +34,6 @@
   <link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
-  <script src="js/config.js"></script>
   <style>
     .trust-grid { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:40px; align-items:center; }
     @media (max-width:640px) { .trust-grid { grid-template-columns:repeat(2,1fr); gap:24px; } }
@@ -74,7 +73,7 @@
       <span>Free Estimate</span>
     </nav>
     <h1>Get Your Free<br><em>In-Home Estimate</em></h1>
-    <p class="page-hero-sub">No sales pressure. No obligation. Just an honest assessment of your windows and doors and a clear written proposal — from a company that has served Bay Area homeowners since 1995.</p>
+    <p class="page-hero-sub">No sales pressure. No obligation. Just an honest assessment of your windows and doors and a clear written proposal, from a company that has served Bay Area homeowners since 1995.</p>
     <div class="page-hero-actions">
       <a href="#estimate-form" class="btn-primary">
         <span>Request Estimate Now</span>
@@ -94,7 +93,7 @@
       <div class="step">
         <div class="step-num" aria-hidden="true">01</div>
         <div class="step-head">You Contact Us</div>
-        <div class="step-text">Fill out the form below or call us. We'll confirm your service area and schedule a convenient time for a free in-home visit — typically within a few days.</div>
+        <div class="step-text">Fill out the form below or call us. We'll confirm your service area and schedule a convenient time for a free in-home visit, typically within a few days.</div>
       </div>
       <div class="step">
         <div class="step-num" aria-hidden="true">02</div>
@@ -104,12 +103,12 @@
       <div class="step">
         <div class="step-num" aria-hidden="true">03</div>
         <div class="step-head">You Get a Clear Proposal</div>
-        <div class="step-text">We send you a written, itemized proposal with product options, pricing, and a realistic timeline. No vague estimates — everything is spelled out clearly.</div>
+        <div class="step-text">We send you a written, itemized proposal with product options, pricing, and a realistic timeline. No vague estimates. Everything is spelled out clearly.</div>
       </div>
       <div class="step">
         <div class="step-num" aria-hidden="true">04</div>
         <div class="step-head">We Install &amp; You Approve</div>
-        <div class="step-text">If you choose to proceed, our certified installers complete your project — typically in a single day. We do a full walkthrough with you before we leave.</div>
+        <div class="step-text">If you choose to proceed, our certified installers complete your project, typically in a single day. We do a full walkthrough with you before we leave.</div>
       </div>
     </div>
   </div>
@@ -141,7 +140,9 @@
       </div>
     </div>
   </div>
-  <form class="contact-form reveal d1" action="#" method="POST" novalidate>
+  <form class="contact-form reveal d1" name="contact" method="POST" action="/thank-you.html" data-netlify="true" data-netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact">
+    <p hidden><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
     <div class="form-row">
       <div class="fg"><label for="fname">First Name <span aria-hidden="true" style="color:var(--green-600)">*</span></label><input type="text" id="fname" name="fname" autocomplete="given-name" placeholder="Margaret" required></div>
       <div class="fg"><label for="lname">Last Name <span aria-hidden="true" style="color:var(--green-600)">*</span></label><input type="text" id="lname" name="lname" autocomplete="family-name" placeholder="Reinholt" required></div>
@@ -164,7 +165,7 @@
         <option>Other / Not Sure</option>
       </select>
     </div>
-    <div class="fg"><label for="msg">Project Details</label><textarea id="msg" name="msg" placeholder="Tell us about your property — home type (Victorian, Craftsman, condo, etc.), number of windows or doors you'd like to replace, any specific styles or materials you're considering, and any timing requirements..."></textarea></div>
+    <div class="fg"><label for="msg">Project Details</label><textarea id="msg" name="msg" placeholder="Tell us about your property: home type (Victorian, Craftsman, condo, etc.), number of windows or doors you'd like to replace, any specific styles or materials you're considering, and any timing requirements..."></textarea></div>
     <button type="submit" class="form-btn">
       <span>Request Free Estimate</span>
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -214,34 +215,6 @@
       const t = document.querySelector(a.getAttribute('href'));
       if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
     });
-  });
-  const form = document.querySelector('.contact-form');
-  if (form) form.addEventListener('submit', async e => {
-    e.preventDefault();
-    const btn = form.querySelector('.form-btn');
-    const bspan = btn.querySelector('span');
-    const endpoint = ((window.WS_CONFIG || {}).formEndpoint || '').trim();
-    btn.disabled = true; bspan.textContent = 'Sending...';
-    let ok = false;
-    if (endpoint && !endpoint.includes('REPLACE')) {
-      try {
-        const r = await fetch(endpoint, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
-        ok = r.ok;
-      } catch { ok = false; }
-    }
-    if (ok) { bspan.textContent = 'Request Sent! We will be in touch.'; form.reset(); }
-    else {
-      btn.disabled = false;
-      bspan.textContent = 'Call 415-295-4502 instead';
-      let note = form.querySelector('.form-fallback-note');
-      if (!note) {
-        note = document.createElement('p');
-        note.className = 'form-fallback-note';
-        note.style.cssText = 'font-size:13px;margin-top:10px;text-align:center;color:oklch(44% .04 255)';
-        note.innerHTML = 'We could not send your request online right now. Call <a href="tel:4152954502" style="color:inherit;font-weight:600;">415-295-4502</a> and we\'ll take your details in two minutes.';
-        btn.insertAdjacentElement('afterend', note);
-      }
-    }
   });
   const hamburger = document.getElementById('nav-hamburger');
   const navLinks = document.getElementById('nav-links');

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://liorvelikin.github.io/Window-Station/sitemap.xml
+Sitemap: https://sfwindowstation.example.com/sitemap.xml
