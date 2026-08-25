@@ -33,7 +33,7 @@
     .pd-type-card:hover { border-top-color:var(--green-500); }
     .pd-type-card-title { font-family:var(--display); font-size:18px; font-weight:500; color:var(--text-light); line-height:1.2; }
     .pd-type-card-desc { font-size:13px; color:var(--text-muted-light); line-height:1.6; }
-    .pd-materials { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:oklch(88% .012 220); margin-top:52px; }
+    .pd-materials { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; background:oklch(88% .012 220); margin-top:52px; }
     .pd-mat { background:var(--cream-50); padding:44px 36px; }
     .pd-mat-icon { margin-bottom:22px; color:var(--navy-950); }
     .pd-mat-label { font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--green-600); margin-bottom:8px; }
@@ -48,8 +48,11 @@
     .pd-gallery-item:hover img { transform:scale(1.04); }
     @media (max-width:900px) {
       .pd-type-strip { grid-template-columns:repeat(2,1fr); }
-      .pd-materials { grid-template-columns:1fr; }
+      .pd-materials { grid-template-columns:repeat(2,1fr); }
       .pd-gallery { grid-template-columns:1fr 1fr; }
+    }
+    @media (max-width:600px) {
+      .pd-materials { grid-template-columns:1fr; }
     }
     @media (max-width:540px) {
       .pd-type-strip { grid-template-columns:1fr; }
@@ -276,6 +279,30 @@
           <li>Exceptional thermal performance</li>
           <li>Resistant to salt air and coastal fog</li>
           <li>50+ year expected lifespan</li>
+        </ul>
+      </div>
+
+      <div class="pd-mat">
+        <div class="pd-mat-icon">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <rect x="4" y="4" width="36" height="36" rx="2"/>
+            <line x1="4" y1="12" x2="40" y2="12"/>
+            <line x1="4" y1="20" x2="40" y2="20"/>
+            <line x1="4" y1="28" x2="40" y2="28"/>
+            <line x1="4" y1="36" x2="40" y2="36"/>
+            <path d="M10 12 Q16 16 22 12 Q28 8 34 12" stroke-width="1"/>
+            <path d="M8 20 Q14 24 20 20 Q26 16 32 20 Q36 22 40 20" stroke-width="1"/>
+            <path d="M4 28 Q10 32 18 28 Q24 24 30 28 Q36 32 40 28" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="pd-mat-label">Classic &amp; Timeless</div>
+        <h3>Wood</h3>
+        <p>Natural wood frames bring warmth and character that no other material can match. A perfect fit for San Francisco Victorians, craftsman homes, and any interior where authenticity matters.</p>
+        <ul>
+          <li>Paintable or stainable to any finish</li>
+          <li>Natural insulation properties</li>
+          <li>Ideal for historic and period homes</li>
+          <li>Available in pine, fir, and oak species</li>
         </ul>
       </div>
 
